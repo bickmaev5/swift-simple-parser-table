@@ -13,11 +13,13 @@ class ProxyItem: NSObject {
     var port: String = "";
     var country: String = "";
     var anonymity: String = "";
+    var lastCheck: String = "";
     override init(){}
-    init(ip: String, port: String, country: String, anonymity: String) {
+    init(ip: String, port: String, country: String, anonymity: String, lastCheck: String) {
         self.ip = ip;
         self.port = port;
         self.country = country;
         self.anonymity = anonymity;
+        self.lastCheck = lastCheck;
     }
 }

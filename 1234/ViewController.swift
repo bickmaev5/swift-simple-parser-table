@@ -11,6 +11,7 @@ import SwiftSoup
 
 class ProxyViewTableCell: UITableViewCell {
     
+    @IBOutlet weak var labelAnon: UILabel!
     @IBOutlet weak var labelIp: UILabel!
     @IBOutlet weak var labelLast: UILabel!
     @IBOutlet weak var labelCountry: UILabel!
@@ -18,34 +19,28 @@ class ProxyViewTableCell: UITableViewCell {
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    
-    struct Item {
-        var ip: String = "";
-        var port: String = "";
-        var country: String = "";
-        var anonymity: String = "";
-    }
+
     // current document
     var document: Document = Document.init("");
-    var items: [Item] = [];
-    var items1 = [[String]]()
+    var proxyItems: [ProxyItem] = [];
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+        return proxyItems.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return items.count;
+        return proxyItems.count;
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellId", for: indexPath) as! ProxyViewTableCell;
-        let proxy = items[indexPath.row];
-        cell.labelIp.text = proxy.ip + proxy.port;
+        let proxy: ProxyItem = proxyItems[indexPath.row];
+        cell.labelIp.text = proxy.ip + ":" + proxy.port;
         cell.labelCountry.text = proxy.country;
-        cell.labelLast.text = proxy.anonymity;
+        cell.labelLast.text = proxy.lastCheck;
+        cell.labelAnon.text = proxy.anonymity;
         return cell;
     }
     
@@ -60,7 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func dowloadPage() {
         guard let url = URL(string: "https://free-proxy-list.net/") else {
-            UIAlertController(title: "Huevo", message: "Ebat'", preferredStyle: .alert)
+            UIAlertController(title: "Ploho", message: "Sparsit ne poluchilosya", preferredStyle: .alert)
             return
         }
 
@@ -87,17 +82,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
             let trs: Elements = try document.select("#proxylisttable > tbody tr");
             for tr: Element in trs {
-                let text: String = try tr.text();
-                let texts: Array<Substring> = text.split(separator: " ");
-                let newItem: Item = Item(ip: String(texts[0]), port: String(texts[1]), country: String(texts[2] + texts[3]), anonymity: String(texts[4]));
-                items.append(Item(ip: newItem.ip, port: newItem.port, country: newItem.country, anonymity: newItem.anonymity))
+                var strings: [String] = [];
+                let tds: Elements = try tr.select("td");
+                for td: Element in tds {
+                    strings.append(try td.text());
+                };
+                let item = ProxyItem(ip: strings[0], port: strings[1], country: strings[2] + " " + strings[3], anonymity: strings[4], lastCheck: strings[7]);
+                proxyItems.append(item);
             }
             tableView.reloadData()
-//            print(items);
-            print("parse complete");
             
         } catch {
-            UIAlertController(title: "Ne rabotaet", message: "Vse pizdec", preferredStyle: .alert);
+            UIAlertController(title: "Ne rabotaet", message: "Vse slomalos", preferredStyle: .alert);
         }
    
     }
