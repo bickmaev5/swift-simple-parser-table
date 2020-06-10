@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		800009AC21EE1329004A1DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800009AA21EE1329004A1DF7 /* LaunchScreen.storyboard */; };
 		800009B721EE1329004A1DF7 /* _234Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800009B621EE1329004A1DF7 /* _234Tests.swift */; };
 		800009C221EE1329004A1DF7 /* _234UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800009C121EE1329004A1DF7 /* _234UITests.swift */; };
+		80A5A28F24912EBC005857CC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 80A5A28E24912EBC005857CC /* SwiftSoup */; };
+		80A5A2912491457F005857CC /* ProxyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5A2902491457F005857CC /* ProxyItem.swift */; };
+		80A5A2932491460C005857CC /* ProxyItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5A2922491460C005857CC /* ProxyItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		800009BD21EE1329004A1DF7 /* 1234UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1234UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		800009C121EE1329004A1DF7 /* _234UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _234UITests.swift; sourceTree = "<group>"; };
 		800009C321EE1329004A1DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A5A2902491457F005857CC /* ProxyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyItem.swift; sourceTree = "<group>"; };
+		80A5A2922491460C005857CC /* ProxyItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyItems.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A5A28F24912EBC005857CC /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,8 @@
 		8000099521EE1328004A1DF7 = {
 			isa = PBXGroup;
 			children = (
+				80A5A2902491457F005857CC /* ProxyItem.swift */,
+				80A5A2922491460C005857CC /* ProxyItems.swift */,
 				800009A021EE1328004A1DF7 /* 1234 */,
 				800009B521EE1329004A1DF7 /* 1234Tests */,
 				800009C021EE1329004A1DF7 /* 1234UITests */,
@@ -141,6 +149,9 @@
 			dependencies = (
 			);
 			name = 1234;
+			packageProductDependencies = (
+				80A5A28E24912EBC005857CC /* SwiftSoup */,
+			);
 			productName = 1234;
 			productReference = 8000099E21EE1328004A1DF7 /* 1234.app */;
 			productType = "com.apple.product-type.application";
@@ -193,13 +204,16 @@
 				TargetAttributes = {
 					8000099D21EE1328004A1DF7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 					};
 					800009B121EE1329004A1DF7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 8000099D21EE1328004A1DF7;
 					};
 					800009BC21EE1329004A1DF7 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 8000099D21EE1328004A1DF7;
 					};
 				};
@@ -213,6 +227,9 @@
 				Base,
 			);
 			mainGroup = 8000099521EE1328004A1DF7;
+			packageReferences = (
+				80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 8000099F21EE1328004A1DF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +275,8 @@
 			files = (
 				800009A421EE1328004A1DF7 /* ViewController.swift in Sources */,
 				800009A221EE1328004A1DF7 /* AppDelegate.swift in Sources */,
+				80A5A2912491457F005857CC /* ProxyItem.swift in Sources */,
+				80A5A2932491460C005857CC /* ProxyItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -457,7 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -476,7 +495,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1234.app/1234";
 			};
@@ -496,7 +515,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/1234.app/1234";
 			};
@@ -515,7 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = 1234;
 			};
@@ -534,7 +553,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-00.-234UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = 1234;
 			};
@@ -580,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80A5A28E24912EBC005857CC /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8000099621EE1328004A1DF7 /* Project object */;
 }
