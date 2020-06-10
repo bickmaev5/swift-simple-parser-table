@@ -19,7 +19,9 @@ class ProxyViewTableCell: UITableViewCell {
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var btn: UIButton!
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+    
     // current document
     var document: Document = Document.init("");
     var proxyItems: [ProxyItem] = [];
@@ -45,12 +47,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.0;//Choose your custom row height
+        return 64.0;//Choose your custom row height
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        loader.isHidden = true;
+        tableView.isHidden = true;
     }
     
     func dowloadPage() {
@@ -74,7 +78,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     @IBAction func click(_ sender: Any) {
-        dowloadPage()
+        loader.isHidden = false;
+        dowloadPage();
     }
     
     func parse() {
@@ -90,6 +95,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let item = ProxyItem(ip: strings[0], port: strings[1], country: strings[2] + " " + strings[3], anonymity: strings[4], lastCheck: strings[7]);
                 proxyItems.append(item);
             }
+            tableView.isHidden = false;
+            btn.isHidden = true;
+            loader.isHidden = true;
             tableView.reloadData()
             
         } catch {
