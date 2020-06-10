@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
            // parse css query
         } catch let error {
            // an error occurred
-           UIAlertController(title: "Huevo", message: "Ebat'", preferredStyle: .alert)
+           UIAlertController(title: "Ploho", message: "ne rabotaet", preferredStyle: .alert)
         }
     }
     
