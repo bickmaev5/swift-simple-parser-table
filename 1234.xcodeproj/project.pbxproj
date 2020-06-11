@@ -14,6 +14,13 @@
 		800009AC21EE1329004A1DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 800009AA21EE1329004A1DF7 /* LaunchScreen.storyboard */; };
 		800009B721EE1329004A1DF7 /* _234Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800009B621EE1329004A1DF7 /* _234Tests.swift */; };
 		800009C221EE1329004A1DF7 /* _234UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800009C121EE1329004A1DF7 /* _234UITests.swift */; };
+		80142C7024926E4200C6058F /* RaidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80142C6F24926E4200C6058F /* RaidDetailViewController.swift */; };
+		804487D32492291500B63880 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804487D22492291500B63880 /* API.swift */; };
+		809269F0249213BE0054CE43 /* RaidTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809269EF249213BE0054CE43 /* RaidTopViewController.swift */; };
+		809269F324921E0D0054CE43 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 809269F224921E0D0054CE43 /* Apollo */; };
+		809269F524921E0D0054CE43 /* ApolloCore in Frameworks */ = {isa = PBXBuildFile; productRef = 809269F424921E0D0054CE43 /* ApolloCore */; };
+		80926A2F249222F60054CE43 /* fetchRaid.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 80926A2E249222F60054CE43 /* fetchRaid.graphql */; };
+		80926A322492246F0054CE43 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80926A312492246F0054CE43 /* Network.swift */; };
 		80A5A28F24912EBC005857CC /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 80A5A28E24912EBC005857CC /* SwiftSoup */; };
 		80A5A2912491457F005857CC /* ProxyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5A2902491457F005857CC /* ProxyItem.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +40,20 @@
 			remoteGlobalIDString = 8000099D21EE1328004A1DF7;
 			remoteInfo = 1234;
 		};
+		80926A10249220C30054CE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8000099621EE1328004A1DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809269F9249220C00054CE43;
+			remoteInfo = "bikmay-raid-tops";
+		};
+		80926A1B249220C30054CE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8000099621EE1328004A1DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 809269F9249220C00054CE43;
+			remoteInfo = "bikmay-raid-tops";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +70,14 @@
 		800009BD21EE1329004A1DF7 /* 1234UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 1234UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		800009C121EE1329004A1DF7 /* _234UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _234UITests.swift; sourceTree = "<group>"; };
 		800009C321EE1329004A1DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80142C6F24926E4200C6058F /* RaidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidDetailViewController.swift; sourceTree = "<group>"; };
+		804487D22492291500B63880 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		809269EF249213BE0054CE43 /* RaidTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaidTopViewController.swift; sourceTree = "<group>"; };
+		809269FA249220C00054CE43 /* bikmay-raid-tops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bikmay-raid-tops.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80926A0F249220C30054CE43 /* bikmay-raid-topsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bikmay-raid-topsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80926A1A249220C30054CE43 /* bikmay-raid-topsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bikmay-raid-topsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80926A2E249222F60054CE43 /* fetchRaid.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = fetchRaid.graphql; sourceTree = "<group>"; };
+		80926A312492246F0054CE43 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		80A5A2902491457F005857CC /* ProxyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +87,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A5A28F24912EBC005857CC /* SwiftSoup in Frameworks */,
+				809269F324921E0D0054CE43 /* Apollo in Frameworks */,
+				809269F524921E0D0054CE43 /* ApolloCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +100,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		800009BA21EE1329004A1DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809269F7249220C00054CE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A0C249220C30054CE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A17249220C30054CE43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -95,6 +147,9 @@
 				8000099E21EE1328004A1DF7 /* 1234.app */,
 				800009B221EE1329004A1DF7 /* 1234Tests.xctest */,
 				800009BD21EE1329004A1DF7 /* 1234UITests.xctest */,
+				809269FA249220C00054CE43 /* bikmay-raid-tops.app */,
+				80926A0F249220C30054CE43 /* bikmay-raid-topsTests.xctest */,
+				80926A1A249220C30054CE43 /* bikmay-raid-topsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,12 +157,17 @@
 		800009A021EE1328004A1DF7 /* 1234 */ = {
 			isa = PBXGroup;
 			children = (
+				80926A2E249222F60054CE43 /* fetchRaid.graphql */,
 				800009A121EE1328004A1DF7 /* AppDelegate.swift */,
 				800009A321EE1328004A1DF7 /* ViewController.swift */,
 				800009A521EE1328004A1DF7 /* Main.storyboard */,
 				800009A821EE1329004A1DF7 /* Assets.xcassets */,
+				804487D22492291500B63880 /* API.swift */,
 				800009AA21EE1329004A1DF7 /* LaunchScreen.storyboard */,
 				800009AD21EE1329004A1DF7 /* Info.plist */,
+				809269EF249213BE0054CE43 /* RaidTopViewController.swift */,
+				80926A312492246F0054CE43 /* Network.swift */,
+				80142C6F24926E4200C6058F /* RaidDetailViewController.swift */,
 			);
 			path = 1234;
 			sourceTree = "<group>";
@@ -140,6 +200,7 @@
 				8000099A21EE1328004A1DF7 /* Sources */,
 				8000099B21EE1328004A1DF7 /* Frameworks */,
 				8000099C21EE1328004A1DF7 /* Resources */,
+				80926A30249223720054CE43 /* generate GQL */,
 			);
 			buildRules = (
 			);
@@ -148,6 +209,8 @@
 			name = 1234;
 			packageProductDependencies = (
 				80A5A28E24912EBC005857CC /* SwiftSoup */,
+				809269F224921E0D0054CE43 /* Apollo */,
+				809269F424921E0D0054CE43 /* ApolloCore */,
 			);
 			productName = 1234;
 			productReference = 8000099E21EE1328004A1DF7 /* 1234.app */;
@@ -189,13 +252,67 @@
 			productReference = 800009BD21EE1329004A1DF7 /* 1234UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		809269F9249220C00054CE43 /* bikmay-raid-tops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80926A21249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-tops" */;
+			buildPhases = (
+				809269F6249220C00054CE43 /* Sources */,
+				809269F7249220C00054CE43 /* Frameworks */,
+				809269F8249220C00054CE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bikmay-raid-tops";
+			productName = "bikmay-raid-tops";
+			productReference = 809269FA249220C00054CE43 /* bikmay-raid-tops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80926A0E249220C30054CE43 /* bikmay-raid-topsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80926A24249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-topsTests" */;
+			buildPhases = (
+				80926A0B249220C30054CE43 /* Sources */,
+				80926A0C249220C30054CE43 /* Frameworks */,
+				80926A0D249220C30054CE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80926A11249220C30054CE43 /* PBXTargetDependency */,
+			);
+			name = "bikmay-raid-topsTests";
+			productName = "bikmay-raid-topsTests";
+			productReference = 80926A0F249220C30054CE43 /* bikmay-raid-topsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80926A19249220C30054CE43 /* bikmay-raid-topsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80926A27249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-topsUITests" */;
+			buildPhases = (
+				80926A16249220C30054CE43 /* Sources */,
+				80926A17249220C30054CE43 /* Frameworks */,
+				80926A18249220C30054CE43 /* Resources */,
+				80926A2A249220CF0054CE43 /* build apolloGQL */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80926A1C249220C30054CE43 /* PBXTargetDependency */,
+			);
+			name = "bikmay-raid-topsUITests";
+			productName = "bikmay-raid-topsUITests";
+			productReference = 80926A1A249220C30054CE43 /* bikmay-raid-topsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		8000099621EE1328004A1DF7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ilnur Bikmaev";
 				TargetAttributes = {
@@ -213,6 +330,17 @@
 						LastSwiftMigration = 1140;
 						TestTargetID = 8000099D21EE1328004A1DF7;
 					};
+					809269F9249220C00054CE43 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					80926A0E249220C30054CE43 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 809269F9249220C00054CE43;
+					};
+					80926A19249220C30054CE43 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 809269F9249220C00054CE43;
+					};
 				};
 			};
 			buildConfigurationList = 8000099921EE1328004A1DF7 /* Build configuration list for PBXProject "1234" */;
@@ -226,6 +354,7 @@
 			mainGroup = 8000099521EE1328004A1DF7;
 			packageReferences = (
 				80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				809269F124921E0D0054CE43 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 			);
 			productRefGroup = 8000099F21EE1328004A1DF7 /* Products */;
 			projectDirPath = "";
@@ -234,6 +363,9 @@
 				8000099D21EE1328004A1DF7 /* 1234 */,
 				800009B121EE1329004A1DF7 /* 1234Tests */,
 				800009BC21EE1329004A1DF7 /* 1234UITests */,
+				809269F9249220C00054CE43 /* bikmay-raid-tops */,
+				80926A0E249220C30054CE43 /* bikmay-raid-topsTests */,
+				80926A19249220C30054CE43 /* bikmay-raid-topsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80926A2F249222F60054CE43 /* fetchRaid.graphql in Resources */,
 				800009AC21EE1329004A1DF7 /* LaunchScreen.storyboard in Resources */,
 				800009A921EE1329004A1DF7 /* Assets.xcassets in Resources */,
 				800009A721EE1328004A1DF7 /* Main.storyboard in Resources */,
@@ -263,16 +396,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		809269F8249220C00054CE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A0D249220C30054CE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A18249220C30054CE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80926A2A249220CF0054CE43 /* build apolloGQL */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "build apolloGQL";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+		80926A30249223720054CE43 /* generate GQL */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "generate GQL";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8000099A21EE1328004A1DF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80926A322492246F0054CE43 /* Network.swift in Sources */,
+				80142C7024926E4200C6058F /* RaidDetailViewController.swift in Sources */,
 				800009A421EE1328004A1DF7 /* ViewController.swift in Sources */,
 				800009A221EE1328004A1DF7 /* AppDelegate.swift in Sources */,
 				80A5A2912491457F005857CC /* ProxyItem.swift in Sources */,
+				804487D32492291500B63880 /* API.swift in Sources */,
+				809269F0249213BE0054CE43 /* RaidTopViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +489,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		809269F6249220C00054CE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A0B249220C30054CE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80926A16249220C30054CE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +522,16 @@
 			isa = PBXTargetDependency;
 			target = 8000099D21EE1328004A1DF7 /* 1234 */;
 			targetProxy = 800009BE21EE1329004A1DF7 /* PBXContainerItemProxy */;
+		};
+		80926A11249220C30054CE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809269F9249220C00054CE43 /* bikmay-raid-tops */;
+			targetProxy = 80926A10249220C30054CE43 /* PBXContainerItemProxy */;
+		};
+		80926A1C249220C30054CE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 809269F9249220C00054CE43 /* bikmay-raid-tops */;
+			targetProxy = 80926A1B249220C30054CE43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -448,7 +676,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L5RR93AQF;
 				INFOPLIST_FILE = 1234/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +695,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L5RR93AQF;
 				INFOPLIST_FILE = 1234/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +787,124 @@
 			};
 			name = Release;
 		};
+		80926A22249220C30054CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"bikmay-raid-tops/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "bikmay-raid-tops/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-tops";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80926A23249220C30054CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"bikmay-raid-tops/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "bikmay-raid-tops/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-tops";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80926A25249220C30054CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bikmay-raid-topsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-topsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bikmay-raid-tops.app/bikmay-raid-tops";
+			};
+			name = Debug;
+		};
+		80926A26249220C30054CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bikmay-raid-topsTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-topsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bikmay-raid-tops.app/bikmay-raid-tops";
+			};
+			name = Release;
+		};
+		80926A28249220C30054CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bikmay-raid-topsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-topsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bikmay-raid-tops";
+			};
+			name = Debug;
+		};
+		80926A29249220C30054CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bikmay-raid-topsUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-00.bikmay-raid-topsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bikmay-raid-tops";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -594,9 +944,44 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		80926A21249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-tops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80926A22249220C30054CE43 /* Debug */,
+				80926A23249220C30054CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80926A24249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-topsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80926A25249220C30054CE43 /* Debug */,
+				80926A26249220C30054CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80926A27249220C30054CE43 /* Build configuration list for PBXNativeTarget "bikmay-raid-topsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80926A28249220C30054CE43 /* Debug */,
+				80926A29249220C30054CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		809269F124921E0D0054CE43 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.28.0;
+			};
+		};
 		80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scinfu/SwiftSoup";
@@ -608,6 +993,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		809269F224921E0D0054CE43 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809269F124921E0D0054CE43 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		809269F424921E0D0054CE43 /* ApolloCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 809269F124921E0D0054CE43 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloCore;
+		};
 		80A5A28E24912EBC005857CC /* SwiftSoup */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80A5A28D24912EBC005857CC /* XCRemoteSwiftPackageReference "SwiftSoup" */;

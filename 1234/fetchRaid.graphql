@@ -1,0 +1,10 @@
+query fetchRaidTop{
+    raid_top(order_by: {place: asc}) {
+        id
+        guildName
+        fraction
+        place
+        realm
+        progress
+    }
+}

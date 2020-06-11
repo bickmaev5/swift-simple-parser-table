@@ -27,10 +27,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var proxyItems: [ProxyItem] = [];
     
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return proxyItems.count
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return proxyItems.count;
